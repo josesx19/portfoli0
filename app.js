@@ -67,33 +67,3 @@ navbar.querySelectorAll("a").forEach(link => {
     });
 });
 
-async function carregarPersonagensMarvel() {
-  const publicKey = "d2b0222f3daf47af5a9386b9a1bb50ed";
-  const url = `https://gateway.marvel.com/v1/public/characters?apikey=${publicKey}&limit=6`;
-
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-
-    const container = document.getElementById("marvel-list");
-    container.innerHTML = "";
-
-    data.data.results.forEach(p => {
-      const img = `${p.thumbnail.path}/portrait_xlarge.${p.thumbnail.extension}`;
-      const link = p.urls[0]?.url || "https://marvel.com";
-
-      const card = document.createElement("div");
-      card.classList.add("habilidade__card");
-      card.innerHTML = `
-        <img src="${img}" alt="${p.name}">
-        <h3>${p.name}</h3>
-        <a href="${link}" target="_blank">Ver mais</a>
-      `;
-      container.appendChild(card);
-    });
-  } catch (err) {
-    console.error("Erro ao carregar personagens:", err);
-  }
-}
-
-carregarPersonagensMarvel();
