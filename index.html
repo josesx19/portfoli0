@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <button id="toggle-theme" class="topo__menu__botao" aria-label="Alternar tema">🌙</button>
+    <header class="topo">
+        <nav class="topo__menu">
+            <a class="topo__menu__link" href="#home">Home</a>
+            <a class="topo__menu__link" href="#sobre">Sobre mim</a>
+            <a class="topo__menu__link" href="#certificados">Certificados</a>
+            <a class="topo__menu__link" href="#habilidades">Habilidades</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menu">
+        <img class="topo__menu__mobile" src="./assets/icons8-menu.svg" alt="Menu">
+    </button>
+    
+     </header>
+    <main class="apresentacao">
+        <section id="home" class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo" id="apresentacao__conteudo__titulo1"><strong></strong></h1>
+            <p class="apresentacao__conteudo__paragrafo1" id="paragrafo1">Sou o José Pires Santos, <strong>desenvolvedor full-stack</strong> em formação pela Alura através do programa Jovem Tech, entusiasta da tecnologia e amante da inovação.</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__links__link" href="https://www.instagram.com/josesx_">
+                   <img class="apresentacao__instagram" src="./assets/instagram_white.png" alt="Instagram">
+                </a>         
+                <a class="apresentacao__links__link" href="https://github.com/josesx19">
+                    <img class="apresentacao__github" src="./assets/github_white.png" alt="Github">
+                </a>
+                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/jos%C3%A9-pires-8aa0b8262/">
+                    <img class="apresentacao__linkedin" src="./assets/linkedin_white.png" alt="Linkedin">          
+                </a> 
+            </div>
+        </section>
+        <span><img id="imagem-eu" class="sobre-mim__imagem" src="./assets/ChatGPT Image 28 de jul. de 2025, 14_52_19-Photoroom.png" alt="Arte gerada em colaboração com IA a partir de foto própria"></span>
+    </main>
+    <main class="apresentacao">
+        <section id="sobre" class="apresentacao__conteudo2">
+            <h1 class="apresentacao__conteudo__titulo2">🧠 Sobre mim</h1>
+            
+            <p class="apresentacao__conteudo__paragrafo">Olá! Me chamo <strong>José Pires</strong>, tenho 20 anos e sou natural de <strong>São Luís, Maranhão</strong>. Desde criança, sempre fui fascinado por tecnologia — meu olhar brilhava ao imaginar os mistérios do universo e o funcionamento de aeronaves, paixões que ajudaram a moldar minha curiosidade e minha forma de ver o mundo.
+            </p>
+
+            <p class="apresentacao__conteudo__paragrafo">No ensino médio, tive facilidade com diversas áreas, mas sempre tive um carinho especial pela física. Em 2023, dei início à minha jornada acadêmica na UFMA, no curso de <strong>Ciência e Tecnologia</strong>, com a intenção de seguir rumo à Engenharia Aeroespacial. No entanto, ao entender melhor o mercado brasileiro nessa área, decidi redirecionar meu foco para um campo que sempre me chamou atenção: a Engenharia da Computação.
+            O ano de 2024 foi um período intenso de mudanças e aprendizados. Por razões pessoais e estratégicas, optei por trancar temporariamente a faculdade. Desde então, tenho me dedicado ao meu <strong>desenvolvimento pessoal e técnico</strong>, explorando com profundidade o universo do <strong>desenvolvimento full-stack e da tecnologia em geral.</strong>
+            </p>
+                
+            <p class="apresentacao__conteudo__paragrafo">Sou movido por desafios, inovação e pela vontade constante de evoluir. Em breve, pretendo retomar minha graduação, agora com uma bagagem muito mais sólida e alinhada aos meus objetivos.                
+            </p>
+        </section>
+        <section id="habilidades" class="sobre-mim__imagem-container">
+        <img class="sobre-mim__imagem1" src="/assets/IMG_20250630_143530_TIMEBURST9 (1).jpg" alt="">
+        </section>
+    </main>
+
+    <main class="apresentacao3">
+        <section id="habilidades" class="apresentacao__conteudo3">
+            <h1 class="apresentacao__conteudo__titulo3">💻 Habilidades</h1>
+
+            <div class="habilidades__grid">
+                <!-- HTML -->
+                <div class="habilidade__card">
+                    <img src="./assets/html-16-svgrepo-com (1).svg" alt="HTML5">
+                    <h3>HTML5</h3>
+                    <p>Estruturação de páginas web com boas práticas semânticas.</p>
+                </div>
+
+                <!-- CSS -->
+                <div class="habilidade__card">
+                    <img src="./assets/css-16-svgrepo-com (2).svg" alt="CSS3">
+                    <h3>CSS3</h3>
+                    <p>Estilização moderna com animações, responsividade e layouts flexíveis.</p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="habilidade__card">
+                    <img src="./assets/javascript-16-svgrepo-com.svg" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <p>Manipulação dinâmica do DOM e interatividade avançada.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="marvel">
+        <h2>Personagens da Marvel</h2>
+        <div id="marvel-list"></div>
+        <p>Data provided by Marvel. © 2025 Marvel</p>
+    </section>
+</body>
+    <footer class="rodape">
+        <p>© Powered by José Pires. 2025
+        </p>
+        <img src="./assets/Logo_Alura_Include_(1).svg" alt="">
+    </footer>
+    <script src="./app.js"></script>
+</html>
