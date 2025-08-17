@@ -461,6 +461,36 @@ strong {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.botao-certificados {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  gap: 10px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #e53835bb, #ff6a3db6);
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.botao-certificados:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
+  background: linear-gradient(135deg, #ff6a3d, #e53935);
+}
+
+.botao-certificados:active {
+  transform: scale(0.98);
+}
+
 .rodape {
     text-align: center;
     color: var(--cor--paragrafo);
@@ -500,7 +530,7 @@ body.light-theme .topo__menu__botao {
 }
 
 body.light-theme .topo__menu__mobile {
-    background-color: #dff38825;
+    background-color: #c4e92025;
 }
 
 body.light-theme .topo__menu__link{
@@ -565,6 +595,17 @@ body.light-theme .apresentacao__links__link:hover::before{
   ) 
 }
 
+body.light-theme .botao-certificados {
+  color: #fff;
+  background: linear-gradient(135deg, #015025b9, #80a300);
+  box-shadow: 0 4px 15px rgba(0, 128, 0, 0.4);
+}
+
+body.light-theme .botao-certificados:hover {
+  background: linear-gradient(135deg, #0b8500, #015046);
+  box-shadow: 0 6px 20px rgba(0, 128, 0, 0.6);
+}
+
 body.light-theme .apresentacao__links__link:hover {
     box-shadow: 0 0 15px rgba(255, 231, 126, 0.425);
 }
@@ -601,6 +642,7 @@ body.light-theme .habilidade__card p {
 body.light-theme .rodape {
     background: linear-gradient(to right, #0b1b1ba4, #01311957);
     border-top: 2px solid #00000050;
+    color: #131313c4;
 }
 
 @media screen and (max-width: 768px) {
@@ -693,7 +735,7 @@ body.light-theme .rodape {
     }
 
     body.light-theme .topo__menu{
-        background-color: #A2AF9B;
+        background-color: #83915e;
     }
 
     .topo__menu a {
