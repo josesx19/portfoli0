@@ -88,9 +88,9 @@ async function carregarPersonagensMarvel() {
       `;
       container.appendChild(card);
     });
-  } catch (err) {
-    console.error("Erro ao carregar personagens:", err);
-  }
-}
+//   } catch (err) {
+//     console.error("Erro ao carregar personagens:", err);
+//   }
+// }
 
 carregarPersonagensMarvel();
