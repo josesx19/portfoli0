@@ -267,6 +267,7 @@ strong {
     border-bottom-style: groove;
     border-bottom: 2px groove var(--cor-secundaria);
     padding-bottom: 10px;
+    animation: fadeSlideIn 1s ease-out;
     color:var(--cor-terciaria);
 }
 
@@ -310,6 +311,7 @@ strong {
     padding: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    animation: fadeSlideIn 1s ease-out;
     
 }
 
@@ -401,6 +403,7 @@ strong {
     /* max-width: 350px; */
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    animation: fadeSlideIn 1s ease-out;
 }
 
 .sobre-mim__imagem {
@@ -413,6 +416,7 @@ strong {
     border-radius: 50%;
     background:#160000d2;
     animation: softPulse 5s infinite;
+    animation: fadeSlideIn 1s ease-out;
 }
 
 
@@ -421,6 +425,7 @@ strong {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    animation: fadeSlideIn 1s ease-out;
 }
 
 .habilidade__card {
