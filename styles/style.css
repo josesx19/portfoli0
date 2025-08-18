@@ -622,6 +622,7 @@ body.light-theme .sobre-mim__imagem {
     content: url("/assets/ChatGPT\ Image\ 16\ de\ ago.\ de\ 2025\,\ 16_03_10.png");
     animation: pulseWhite 2s infinite;
     animation: softPuls3 4s infinite;
+    animation: fadeSlideIn 1s ease-out;
 }
 
 body.light-theme .sobre-mim__imagem1 {
@@ -629,6 +630,7 @@ body.light-theme .sobre-mim__imagem1 {
     background-color: #3c89383b;
     content: url("/assets/IMG_6178.jpg");
     animation: pulseWhite 2s infinite;
+    animation: fadeSlideIn 1s ease-out;
 }
 
 body.light-theme .habilidade__card {
