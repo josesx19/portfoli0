@@ -67,3 +67,24 @@ navbar.querySelectorAll("a").forEach(link => {
     });
 });
 
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+
+// seção contato
+if (form) {
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_s7wf4el", "template_7ea0srb", this)
+      .then(() => {
+        status.textContent = "✅ Mensagem enviada com sucesso!";
+        status.style.color = "lightgreen";
+        form.reset();
+      }, (err) => {
+        status.textContent = "❌ Erro ao enviar. Tente novamente.";
+        status.style.color = "red";
+        console.error(err);
+      });
+  });
+}
