@@ -16,7 +16,7 @@
         box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
     }
     50% {
-        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
     }
     100% {
         box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
@@ -191,15 +191,16 @@ strong {
     padding: 2px;
 } */
 .apresentacao {
-    margin: 7% 11%;
+    margin: 10% 14%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 82px;
+    
 }
 
 .apresentacao3 {
-    margin: 8% auto;
+    margin: 10% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,9 +225,9 @@ strong {
 }
 
 .apresentacao__conteudo3 {
-    width: 70%;       /* aumenta a largura sem ocupar tudo */
-    max-width: 1200px; /* limita para não ficar exagerado em telas muito grandes */
-    margin: 0 auto;   /* mantém centralizado */
+    width: 70%;       
+    max-width: 1200px;
+    margin: 0 auto;   
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -407,7 +408,8 @@ strong {
     /* max-width: 350px; */
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
-    animation: fadeSlideIn 1s ease-out;
+    animation: fadeSlideIn 1s ease-out, pulseGlow 2s infinite;
+    
 }
 
 .sobre-mim__imagem {
@@ -415,12 +417,9 @@ strong {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
     width:auto;  
-    animation: fadeSlideIn 1s ease-out;
-    animation: pulseGlow 2s infinite;
     border-radius: 50%;
     background:#160000d2;
-    animation: softPulse 2s infinite;
-    animation: fadeSlideIn 1s ease-out;
+    animation: softPulse 4s infinite, fadeSlideIn 1s ease-out;
 }
 
 
@@ -446,7 +445,7 @@ strong {
     width: 60px;
     height: auto;
     margin-bottom: 15px;
-    margin: 1px 60px 1px;
+    margin: 1px 40% 1px;
     
 }
 
@@ -488,6 +487,7 @@ strong {
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
   transition: all 0.3s ease;
+  animation: softPulse 2s infinite;
 }
 
 .botao-certificados:hover {
@@ -543,6 +543,7 @@ strong {
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.3s;
+  animation: softPulse 2s infinite;
 }
 
 .contato__form button:hover {
@@ -559,7 +560,7 @@ strong {
 .rodape {
     text-align: center;
     color: var(--cor--paragrafo);
-    background: linear-gradient(to right, #2c000067, #04001b91);
+    background: linear-gradient(to right, #1800007a, #110000a9);
     padding: 20px;
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
@@ -668,6 +669,8 @@ body.light-theme .botao-certificados {
   color: #fff;
   background: linear-gradient(135deg, #003f159a, #80a300);
   box-shadow: 0 4px 15px rgba(0, 128, 0, 0.4);
+   animation: softPuls3 2s infinite;
+
 }
 
 body.light-theme .botao-certificados:hover {
@@ -685,16 +688,14 @@ body.light-theme .sobre-mim__imagem {
     background-color: #3c89383b;
     content: url("/assets/ChatGPT\ Image\ 16\ de\ ago.\ de\ 2025\,\ 16_03_10.png");
     animation: pulseWhite 2s infinite;
-    animation: softPuls3 4s infinite;
-    animation: fadeSlideIn 1s ease-out;
+    animation: softPuls3 4s infinite, fadeSlideIn 1s ease-out;
 }
 
 body.light-theme .sobre-mim__imagem1 {
     box-shadow: 0 0 10px rgba(199, 255, 79, 0.493);
     background-color: #3c89383b;
     content: url("/assets/IMG_6178.jpg");
-    animation: pulseWhite 2s infinite;
-    animation: fadeSlideIn 1s ease-out;
+    animation: pulseWhite 2s infinite, fadeSlideIn 1s ease-out;
 }
 
 body.light-theme .habilidade__card {
@@ -725,6 +726,7 @@ body.light-theme .contato__form textarea:focus {
 
 body.light-theme .contato__form button {
   background: linear-gradient(45deg, #2e7d32, #66bb6a);
+  animation: softPuls3 2s infinite;
 }
 
 body.light-theme .contato__form button:hover {
@@ -864,19 +866,19 @@ body.light-theme .rodape {
 }
 @media screen and (min-width: 770px) and (max-width: 1220px) {
   .apresentacao {
-    flex-direction: column;   /* deixa em coluna para não apertar */
+    flex-direction: column;   
     margin: 12% 8%;
     gap: 40px;
   }
   .apresentacao__conteudo {
      width: 100%;
-    text-align: justify; /* melhora leitura */
+    text-align: justify; 
     font-size: 1rem;
     order: 2;
     }
   .apresentacao__conteudo2 {
     width: 100%;
-    text-align: justify; /* melhora leitura */
+    text-align: justify; 
     font-size: 1rem;
   }
 
@@ -887,7 +889,7 @@ body.light-theme .rodape {
   }
 
   .sobre-mim__imagem1 {
-    max-width: 70%;  /* diminui imagem */
+    max-width: 70%;  
     height: auto;
     border-radius: 15px;
   }
